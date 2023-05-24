@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+void getRevertText(char *cadena);
+
+int main() {
+    char texto[50];
+
+    printf("Ingrese un texto: ");
+    fgets(texto, sizeof(texto), stdin);
+
+    texto[strcspn(texto, "\n")] = '\0';
+
+    printf("Texto invertido: ");
+    getRevertText(texto);
+    printf("\n");
+
+    return 0;
+}
+
+void getRevertText(char *cadena) {
+    int longitud = strlen(cadena);
+
+    for (int m = longitud - 1; m >= 0; m--) {
+        printf("%c", cadena[m]);
+    }
+}
