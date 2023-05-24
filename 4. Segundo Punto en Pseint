@@ -1,0 +1,24 @@
+Algoritmo invertirTexto
+	
+Funcion invertir(cadena: Cadena) devuelve Cadena
+        longitud <- Longitud(cadena)
+        textoInvertido <- ""
+        Para m <- longitud - 1 hasta 0 con paso -1 hacer
+            textoInvertido <- textoInvertido + SubCadena(cadena, m, 1)
+        Fin Para
+        Devolver textoInvertido
+    Fin Funcion
+	
+    Proceso principal
+        Definir texto Como Caracteres
+        texto <- ""
+		
+        Escribir "Ingrese un texto: "
+        Leer texto
+		
+        texto <- Reemplazar(texto, "\n", "")
+		
+        Escribir "Texto invertido: " + invertir(texto)
+    Fin Proceso
+	
+Fin Algoritmo
