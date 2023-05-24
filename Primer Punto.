@@ -1,0 +1,14 @@
+Algoritmo DivicionQuizClase
+    Escribir "Ingrese el numerador:"
+    Leer numerador
+    
+    Escribir "Ingrese el denominador:"
+    Leer denominador
+    
+	Si denominador = 0 Entonces
+        Escribir "LoLa - Mento por 0 no se puede dividir. Okles."
+    Sino
+        cociente <- numerador / denominador
+        Escribir "El resultado de la división es:", cociente
+    FinSi
+FinAlgoritmo
